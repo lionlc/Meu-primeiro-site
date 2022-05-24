@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>The Front-End</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <!-- css -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700" rel="stylesheet">
+  
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+  <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+  <link href="css/jcarousel.css" rel="stylesheet" />
+  <link href="css/flexslider.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- Theme skin -->
+  <link href="skins/default.css" rel="stylesheet" />
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
+  <link rel="shortcut icon" href="ico/favicon.png" />
+
+  <!-- =======================================================
+    Theme Name: Flattern
+    Theme URL: https://bootstrapmade.com/flattern-multipurpose-bootstrap-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- toggle top area -->
+    <div class="hidden-top">
+      <div class="hidden-top-inner container">
+        <div class="row">
+          <div class="span12">
+            <ul>
+              <li><strong>Este site, foi desenvolvido por Leonardo Cezar e Ruan Vitor, com o intuito de ajudar as pessoas que querem seguir a carreira de desenvolvedor Front-End.</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end toggle top area -->
+    <!-- start header -->
+    <header>
+      <div class="container ">
+        <!-- hidden top area toggle link -->
+        <div id="header-hidden-link">
+          <a href="#" class="toggle-link" title="Click me you'll get a surprise" data-target=".hidden-top"><i></i>Abrir</a>
+        </div>
+        <!-- end toggle link -->
+        <div class="row nomargin">
+          <div class="span12">
+            <div class="headnav">
+              <ul>
+                <li><a href="#mySignup" data-toggle="modal"><i class="icon-user"></i> Cadastre-se</a></li>
+                <li><a href="#mySignin" data-toggle="modal">Login</a></li>
+              </ul>
+            </div>
+            <!-- Signup Modal -->
+            <div id="mySignup" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="mySignupModalLabel" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 id="mySignupModalLabel">Criar uma<strong>conta</strong></h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+                  <div class="control-group">
+                    <label class="control-label" for="inputEmail">Email</label>
+                    <div class="controls">
+                      <input type="text" id="inputEmail" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputSignupPassword">Senha</label>
+                    <div class="controls">
+                      <input type="password" id="inputSignupPassword" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputSignupPassword2">Confirme sua senha</label>
+                    <div class="controls">
+                      <input type="password" id="inputSignupPassword2" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <button type="submit" class="btn">Cadrastrar</button>
+                    </div>
+                    <p class="aligncenter margintop20">
+                      Já tem uma conta? <a href="#mySignin" data-dismiss="modal" aria-hidden="true" data-toggle="modal">Login</a>
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- end signup modal -->
+            <!-- Sign in Modal -->
+            <div id="mySignin" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="mySigninModalLabel" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 id="mySigninModalLabel">Entre na sua <strong>Conta</strong></h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+                  <div class="control-group">
+                    <label class="control-label" for="inputText">Login</label>
+                    <div class="controls">
+                      <input type="text" id="inputText" placeholder="Username">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputSigninPassword">Senha</label>
+                    <div class="controls">
+                      <input type="password" id="inputSigninPassword" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <button type="submit" class="btn">Entrar</button>
+                    </div>
+                    <p class="aligncenter margintop20">
+                      Esqueceu a sua senha? <a href="#myReset" data-dismiss="modal" aria-hidden="true" data-toggle="modal">Recuperar</a>
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- end signin modal -->
+            <!-- Reset Modal -->
+            <div id="myReset" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="myResetModalLabel" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 id="myResetModalLabel">Recuperar sua <strong>senha</strong></h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+                  <div class="control-group">
+                    <label class="control-label" for="inputResetEmail">Email</label>
+                    <div class="controls">
+                      <input type="text" id="inputResetEmail" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <button type="submit" class="btn">Recuperar</button>
+                    </div>
+                    <p class="aligncenter margintop20">
+                      Enviaremos instruções sobre como recuperar sua senha para sua caixa de entrada.
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- end reset modal -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="span4">
+            <div class="logo">
+              <a href="index.html"><img src="img/logo.png" alt="" class="logo" /></a>
+               
+            </div>
+          </div>
+          <div class="span8">
+            <div class="navbar navbar-static-top">
+              <div class="navigation">
+                <nav>
+                  <ul class="nav topnav">
+                    <li class="dropdown active">
+                      <a href="index.html">Home</i></a>
+                      <ul class="dropdown-menu">
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#">Cursos <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="https://www.youtube.com/watch?v=YoDJsSII2Ug&list=PLwXQLZ3FdTVGKl3iPEyEWpFoYkMUxWW5O">Html</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=FRhM6sMOTfg&list=PLwXQLZ3FdTVGf7GUtiOFLc_9AXO25iIzG">Css</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=ipHuSfOYhwA&list=PLInBAd9OZCzxl38aAYdyoMHVg0xCgxrRx">JavaScript</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=_0PL45xM__0&list=PLBbHLUbqqCrTwIrdix6kl84m4OPE0JexR">Bootstrap</a></li> </ul></li>
+
+                    <li class="dropdown">
+                      <a href="dicas.html">Dicas</i></a>
+                      <ul class="dropdown-menu">
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="sobre.html">Sobre</i></a>
+                      <ul class="dropdown-menu">
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="contact.html">Contato</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <!-- end navigation -->
+    </header>
+      <body>
+      <center><h2>Este projeto, foi desenvolvido por Leonardo Cezar e Ruan Vitor, com o intuito de ajudar as pessoas que querem seguir a carreira de desenvolvedor Front-End.</h2>
+        <h3> Relato de rubenmarcus que já está trabalhando na área!</h3>
+        
+        </h3> - Programar é legal e divertido, mas é repetitivo e estressante.(Dependendo do projeto,dos prazos e etc, e muitas empresas não tem estrutura, e procuram mais heróis do que desenvolvedores)
+2 - Não. Uns 80% tiram menos de 5mil reais, e isso pra viver no Brasil,não é lá muita coisa. Isso se você for solteiro, agora se tiver familia esquece, ganhar a base de 2000 - 4000 que é o que a maioria ganha, dá pra se viver, Mas com "qualidade", ai ja é algo de se duvidar
+3 - Todas são. Quando você gosta do que faz, é satisfatório por no ar um projeto que mais de 30 pessoas trabalharam e milhões de usuários acessam todo dia/mês, como tambem é satisfatório montar aquele site de 3 paginas para a padaria do seu zé ,e descobrir que graças ao site super barato que você fez pra ele em menos de 2 dias, ele está vendendo mais. A questão é ser útil. Eu tenho algumas empresas multinacionais no portfolio, E isso salta aos olhos de entrevistadores daqui e de fora, mas na competência técnica eu não fiz nada demais do que já fazia nos outros projetos.
+A melhor experiência é a que alia, bom planejamento, com bom desenvolvimento ( onde você utiliza novas ferramentas,conceitos e tecnicas e tambem tem um resultado financeiro e profissional interessante. E que seu cliente fica feliz )
+
+Antes de você se tornar um, você tem que avaliar que tipo você quer ser, se vai ser um Engineer, um voltado mais pra UX/UI , se vai desenvolver Javascript,PHP,C#, etc, bom eu em 6 anos de profissão e 10 de brincadeira, posso te recomendar o seguinte: Pegue um estágio e projetos em produção, o mais rápido possivel, é a melhor forma de aprender, as pessoas que eu vejo com 20,21,22,23 anos que manjam muito de programação e técnica, são pessoas que entraram cedo no mercado, Eu fiz um caminho que entrei tarde no mercado ( 20 anos ) e perdi muito tempo fazendo a mesma coisa ( Recorte de Layouts, implementação de temas Wordpress) ,numa época que dava dinheiro fazer para agências, mas nunca ganhei muita grana, Tinha reuniões com figurões que me prometiam boladas de dinheiro, mas só me enrosquei e endividei e ganhei bem pouco do que foi prometido
+
+Então se eu fosse um front de 16 anos, (o que eu já era nessa idade,mas na época era tabela e eu me preocupava mais em fazer sites de animes, e tinha um pensamento errado do tipo: Pra que programar se eu posso instalar um script PHP e modifica-lo ? )
+
+Estudaria Conceito
+Colocaria um Projeto Grande de visibilidade que me ensinasse muita coisa e que seria um marco na minha carreira : (EX: um jogo)
+Faria cursos e colocaria em pratica tudo que aprendi, através de exemplos no codepen
+Iria em eventos, todos que pudesse
+Escreveria sobre o que aprendi
+Faria networking
+
+E uma coisa que até hoje eu me preocupo muito com 27 anos ainda, é : Não quero ser apenas um cara que faz código para clientes.. Quero ter projetos pessoais, sobre sites de assunto (s) que me interessam, ne mque seja um tumblr com textos e artigos que leio, sei lá, Mas quero ter um lado pessoal no lado profissional que eu faço. Então acho que esse lado "pessoal" tambem é importante, e ter projetos open source no seu portfolio, é tão ou mais importante do que ter mais de 20,30 projetos de clientes.</h3>
+      </h1> </center> </body>
+     
+<div>
+
+   <section id="inner-headline">
+      <div class="container">
+        <div class="row">
+          <div class="span3">
+      </div>
+      <div id="sub-footer">
+        <div class="container">
+          <div class="row">
+            <div class="span6">
+              <div class="copyright">
+                <p>
+                  <span>&copy; The Front-End - Todos direitos reservados.</span>
+                </p>
+                <div class="credits">
+                  <!--
+                    All the links in the footer should remain intact.
+                    You can delete the links only if you purchased the pro version.
+                    Licensing information: https://bootstrapmade.com/license/
+                    Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Flattern
+                  -->
+                  Designed remix by <a href="https://bootstrapmade.com/">Leonardo and Ruan.</a>
+                </div>
+  <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-32 active"></i></a>
+  <!-- javascript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jcarousel/jquery.jcarousel.min.js"></script>
+  <script src="js/jquery.fancybox.pack.js"></script>
+  <script src="js/jquery.fancybox-media.js"></script>
+  <script src="js/google-code-prettify/prettify.js"></script>
+  <script src="js/portfolio/jquery.quicksand.js"></script>
+  <script src="js/portfolio/setting.js"></script>
+  <script src="js/jquery.flexslider.js"></script>
+  <script src="js/jquery.nivo.slider.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/jquery.ba-cond.min.js"></script>
+  <script src="js/jquery.slitslider.js"></script>
+  <script src="js/animate.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Custom JavaScript File -->
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>

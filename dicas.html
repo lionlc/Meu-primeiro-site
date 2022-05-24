@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>The Front-End</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <!-- css -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+  <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+  <link href="css/jcarousel.css" rel="stylesheet" />
+  <link href="css/flexslider.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- Theme skin -->
+  <link href="skins/default.css" rel="stylesheet" />
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
+  <link rel="shortcut icon" href="ico/favicon.png" />
+
+  <!-- =======================================================
+    Theme Name: Flattern
+    Theme URL: https://bootstrapmade.com/flattern-multipurpose-bootstrap-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- toggle top area -->
+    <div class="hidden-top">
+      <div class="hidden-top-inner container">
+        <div class="row">
+          <div class="span12">
+            <ul>
+              <li><strong>Este site, foi desenvolvido por Leonardo Cezar e Ruan Vitor, com o intuito de ajudar as pessoas que querem seguir a carreira de desenvolvedor Front-End.</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end toggle top area -->
+    <!-- start header -->
+    <header>
+      <div class="container ">
+        <!-- hidden top area toggle link -->
+        <div id="header-hidden-link">
+          <a href="#" class="toggle-link" title="Click me you'll get a surprise" data-target=".hidden-top"><i></i>Abrir</a>
+        </div>
+        <!-- end toggle link -->
+        <div class="row nomargin">
+          <div class="span12">
+            <div class="headnav">
+              <ul>
+                <li><a href="#mySignup" data-toggle="modal"><i class="icon-user"></i> Cadastre-se</a></li>
+                <li><a href="#mySignin" data-toggle="modal">Login</a></li>
+              </ul>
+            </div>
+            <!-- Signup Modal -->
+            <div id="mySignup" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="mySignupModalLabel" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 id="mySignupModalLabel">Criar uma<strong>conta</strong></h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+                  <div class="control-group">
+                    <label class="control-label" for="inputEmail">Email</label>
+                    <div class="controls">
+                      <input type="text" id="inputEmail" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputSignupPassword">Senha</label>
+                    <div class="controls">
+                      <input type="password" id="inputSignupPassword" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputSignupPassword2">Confirme sua senha</label>
+                    <div class="controls">
+                      <input type="password" id="inputSignupPassword2" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <button type="submit" class="btn">Cadrastrar</button>
+                    </div>
+                    <p class="aligncenter margintop20">
+                      Já tem uma conta? <a href="#mySignin" data-dismiss="modal" aria-hidden="true" data-toggle="modal">Login</a>
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- end signup modal -->
+            <!-- Sign in Modal -->
+            <div id="mySignin" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="mySigninModalLabel" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 id="mySigninModalLabel">Entre na sua <strong>Conta</strong></h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+                  <div class="control-group">
+                    <label class="control-label" for="inputText">Login</label>
+                    <div class="controls">
+                      <input type="text" id="inputText" placeholder="Username">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputSigninPassword">Senha</label>
+                    <div class="controls">
+                      <input type="password" id="inputSigninPassword" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <button type="submit" class="btn">Entrar</button>
+                    </div>
+                    <p class="aligncenter margintop20">
+                      Esqueceu a sua senha? <a href="#myReset" data-dismiss="modal" aria-hidden="true" data-toggle="modal">Recuperar</a>
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- end signin modal -->
+            <!-- Reset Modal -->
+            <div id="myReset" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="myResetModalLabel" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 id="myResetModalLabel">Recuperar sua <strong>senha</strong></h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+                  <div class="control-group">
+                    <label class="control-label" for="inputResetEmail">Email</label>
+                    <div class="controls">
+                      <input type="text" id="inputResetEmail" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <button type="submit" class="btn">Recuperar</button>
+                    </div>
+                    <p class="aligncenter margintop20">
+                      Enviaremos instruções sobre como recuperar sua senha para sua caixa de entrada.
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- end reset modal -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="span4">
+            <div class="logo">
+              <a href="index.html"><img src="img/logo.png" alt="" class="logo" /></a>
+               
+            </div>
+          </div>
+          <div class="span8">
+            <div class="navbar navbar-static-top">
+              <div class="navigation">
+                <nav>
+                  <ul class="nav topnav">
+                    <li class="dropdown active">
+                      <a href="index.html">Home</i></a>
+                      <ul class="dropdown-menu">
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="index.html">Cursos <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                          <ul class="dropdown-menu sub-menu-level1">
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="dicas.html">Dicas</i></a>
+                      <ul class="dropdown-menu">
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="sobre.html">Sobre</i></a>
+                      <ul class="dropdown-menu">
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="contact.html">Contato</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <!-- end navigation -->
+    </header>
+    <section class="callaction">
+       <center><h1 class="heading"><strong>Dicas úteis</strong></h1></center>
+     <center> <h2 class="heading"> Primeiros passos para ser um programador front-end</h2></center>
+        <h4> Se você quer ingressar nesta área a primeira coisa que precisa fazer é desmistificar alguns pré-conceitos. Um deles é de que desenvolvedor front-end e não mexe com design e designer não entende de lógica de programação. O ideal é que esses profissionais procurem entender e desenvolver novos conhecimentos a fim de aprimorar suas atividades.
+
+É natural que um desenvolvedor não tenha total domínio sobre design, mas ao menos precisa conhecer o básico sobre legibilidade e usabilidade de sites. Assim como o web designer precisa entender como funciona o back-end de um site e compreender lógica de programação. O profissional que está disposto a ampliar o seu campo de atuação tende a encontrar melhores oportunidades no mercado de trabalho.</h4>
+
+<center><h2>O que um programador front-end precisa saber?</h2></center>
+
+<h4> Quem atua com o desenvolvimento web sabe que tão importante quanto dominar uma linguagem de programação é conhecer o funcionamento de várias. Portanto, se você pretende ser um profissional completo, prepare-se para estudar muito. Confira abaixo um pouquinho do que você precisa saber para ser um programador front-end:
+
+Lógica de programação
+Esse é um dos requisitos básicos para quem quer ingressar no universo do desenvolvimento de sites. Para quem está começando agora sugerimos o post “Por que é tão importante aprender programação?”. Além disso você também pode escolher um dos 6 sites para você aprender a programar e já começar os estudos.</h4>
+
+<center><h2>HTML</h2></center>
+
+<h4> Qualquer um que queira aprender a programar precisa conhecer HTML. Portanto, se você realmente deseja ser um programador front-end vai precisar começar pelo HTML. Essa é a linguagem usada para estruturar todo o conteúdo de um site. O recomendado é que você aprenda os fundamentos de HTML, coloque os conhecimentos em prática criando uma página na web. Além disso, também é importante dar atenção à semântica (que simplifica a leitura do código e o SEO) e acessibilidade.</h4>
+
+<center><h2>CSS</h2></center>
+
+<h4>Outra linguagem que todo programador front-end precisa conhecer é o CSS, que significa Cascading Style Sheets, para o português poderíamos traduzir como folhas de estilo em cascata. Na prática o CSS pode ser considerado um complemento para o HTML, pois organiza melhor as linhas e adiciona novas possibilidades ao código. Com essa linguagem você pode mudar praticamente todo o visual de um site, por isso é fundamental conhecê-la.</h4>
+
+<center><h2>avaScript (jQuery)</h2></center>
+
+<h4>Quando ingressar no universo do desenvolvimento web você vai ouvir muito falar em Java e JavaScript. Mas é importante saber que elas não são a mesma coisa. O JavaScript também pode ser considerado um complemento ao HTML e ao CSS, pois é uma linguagem responsável por algumas funções e comportamentos que tornam os sites mais dinâmicos. Já o jQuery é uma biblioteca que ajuda a sintetizar o código, reduzindo suas linhas e mantendo a mesma função.</h4>
+
+<center> <h2>Bootstrap</h2></center>
+
+<h4>O Bootstrap é um framework muito popular, voltado para a criação de sites responsivos. Seus recursos são muito usados por programadores front-end, pois a ferramenta oferece componentes e recursos que simplificam e tornam mais ágil o desenvolvimento web. É importante destacar que o Bootstrap é gratuito, oferece modelos e estilos editáveis que facilitam a criação de layouts responsivos.</h4>
+
+<h4>Tudo o que apresentamos até aqui é só o básico para você se tornar um programador front-end. Além destes conhecimentos também é fundamental ter noções de design, isso vai simplificar a distribuição do conteúdo.</h4>
+
+<h4>Também é importante ressaltar que o programador front-end pode assumir um papel intermediário entre o cliente o back-end. Por isso é importante usar a empatia e procurar entender ambas as partes, juntos vocês poderão encontrar alternativas para solucionar eventuais contratempos.</h4>
+
+<h4>Este post esclareceu suas principais dúvidas sobre como se tornar um programador front-end? Recomendamos também que você leia alguns conteúdos que publicamos com dicas para aprender a programar, abordagens de UX Design e ferramentas que todo web designer precisa conhecer.</h1>
+
+  <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-32 active"></i></a>
+
+<section id="inner-headline">
+  <div class="container">
+        <div class="row">
+          <div class="span3">
+      </div>
+      <div id="sub-footer">
+        <div class="container">
+          <div class="row">
+            <div class="span6">
+              <div class="copyright">
+                <p>
+                  <span>&copy; The Front-End - Todos direitos reservados.</span>
+                </p>
+                <div class="credits">
+                  <!--
+                    All the links in the footer should remain intact.
+                    You can delete the links only if you purchased the pro version.
+                    Licensing information: https://bootstrapmade.com/license/
+                    Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Flattern
+                  -->
+                  Designed remix by <a href="https://bootstrapmade.com/">Leonardo and Ruan.</a>
+                </div>
+  <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-32 active"></i></a>
+  <!-- javascript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jcarousel/jquery.jcarousel.min.js"></script>
+  <script src="js/jquery.fancybox.pack.js"></script>
+  <script src="js/jquery.fancybox-media.js"></script>
+  <script src="js/google-code-prettify/prettify.js"></script>
+  <script src="js/portfolio/jquery.quicksand.js"></script>
+  <script src="js/portfolio/setting.js"></script>
+  <script src="js/jquery.flexslider.js"></script>
+  <script src="js/jquery.nivo.slider.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/jquery.ba-cond.min.js"></script>
+  <script src="js/jquery.slitslider.js"></script>
+  <script src="js/animate.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Custom JavaScript File -->
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>
